@@ -42,6 +42,18 @@ let myUser: User = {
     isActive: false
 };
 
+type cardNumber = {
+    cardnumber: string
+}
+
+type cardDate = {
+    carddate: string
+}
+
+// define new type with the combination of previous types as well
+type cardDetails = cardNumber & cardDate & {
+    cvv: number
+}
 
 
 myUser.email = "s@sk.com";
