@@ -32,7 +32,7 @@ shuvo = {
     isAdmin: true
 };
 
-// while storing id in database
+// union type in function while storing id in database
 function getDbId(id: string | number) {
     // console.log(`Database ${id}`);
     if(typeof id === "number"){
@@ -42,8 +42,19 @@ function getDbId(id: string | number) {
     }
 }
 
-getDbId(34);
-getDbId("shuvo34");
+/* getDbId(34);
+getDbId("shuvo34"); */
+
+//// union type in arrays
+const data: number[] = [1,2,3,4];
+const data2: string[] = ["1", "2", "3", "4"];
+// union while only one type accepted either string or number
+const data3: string[] | number[] = [1,2,3,4];
+const data4: string[] | number[] = ["1", "2","3", "4"];
+// union while all types are accepted
+const data5: (string | number | boolean)[] = [1, 2, 3, 4, true, "1", "2", "3", "4"];
+
+//  The main reason behind using typescript how we give types more strict.
 
 
 

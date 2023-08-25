@@ -19,7 +19,7 @@ shuvo = {
     id: "21",
     isAdmin: true
 };
-// while storing id in database
+// union type in function while storing id in database
 function getDbId(id) {
     // console.log(`Database ${id}`);
     if (typeof id === "number") {
@@ -29,5 +29,13 @@ function getDbId(id) {
         console.log(id.toUpperCase());
     }
 }
-getDbId(34);
-getDbId("shuvo34");
+/* getDbId(34);
+getDbId("shuvo34"); */
+//// union type in arrays
+var data = [1, 2, 3, 4];
+var data2 = ["1", "2", "3", "4"];
+// union while only one type accepted either string or number
+var data3 = [1, 2, 3, 4];
+var data4 = ["1", "2", "3", "4"];
+// union while all types are accepted
+var data5 = [1, 2, 3, 4, true, "1", "2", "3", "4"];
