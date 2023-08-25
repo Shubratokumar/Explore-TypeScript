@@ -39,3 +39,11 @@ var data3 = [1, 2, 3, 4];
 var data4 = ["1", "2", "3", "4"];
 // union while all types are accepted
 var data5 = [1, 2, 3, 4, true, "1", "2", "3", "4"];
+//  The main reason behind using typescript how we give types more strict.
+// not useful case but it's maybe
+/* let pi:3.14 = 3.14;
+pi = 3.145; */
+// Use cases: while allocating sea
+var seatAllotment;
+// assignable
+seatAllotment = "aisle";

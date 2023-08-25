@@ -56,6 +56,19 @@ const data5: (string | number | boolean)[] = [1, 2, 3, 4, true, "1", "2", "3", "
 
 //  The main reason behind using typescript how we give types more strict.
 
+// not useful case but it's maybe
+/* let pi:3.14 = 3.14;
+pi = 3.145; */
+
+// Use cases: while allocating sea
+let seatAllotment: "aisle" | "middle" | "window" | "back";
+
+// assignable
+seatAllotment = "aisle";
+// couldn't assignable at all because of type checking
+seatAllotment = "front";
+seatAllotment = "crew";
+
 
 
 
