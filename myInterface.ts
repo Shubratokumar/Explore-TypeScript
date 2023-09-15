@@ -8,9 +8,21 @@ interface User {
     getCoupon(couponname: string, value: number): number
 }
 
-const shuvo: User = {
+// Its totally allowed to define interface with same name
+// Reopening of interface
+interface User {
+    githubToken: string
+}
+// Extend interface 
+interface Admin extends User {
+    role: "admin" | "teacher" | "pupil"
+}
+
+const shuvo: Admin = {
     dbId: 55,
+    role: "admin",
     email: "sk@gmail.com",
+    githubToken: "github/token",
     userId: 4444,
     startTrail:  () => {
         return "Trial Started!";
